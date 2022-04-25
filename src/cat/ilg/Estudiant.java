@@ -8,6 +8,6 @@ public class Estudiant {
     }
 
     public String obtenirDades(){
-        return
+
     }
 }
