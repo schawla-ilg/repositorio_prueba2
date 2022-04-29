@@ -16,7 +16,7 @@ public class Professor extends Persona{
     }
 
     public String obtenirDades() {
-        return "Persona amb nom: " + this.getNom() + " i DNI: " + this.getDni() + "(Professor amb sou: )";
+        return "Persona amb nom: " + this.getNom() + " i DNI: " + this.getDni() + "(Professor amb sou: " + getSou()+")";
     }
 
 }

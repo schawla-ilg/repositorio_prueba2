@@ -13,14 +13,19 @@ public class Persona {
     }
 
     public void assignarDni(String dni){
-        this.dni = dni;
+        if (this.dni == null){
+            this.dni = dni;
+        }
+        else {
+
+        }
     }
     public String getDni(){
         return this.dni;
     }
 
     public String obtenirDades() {
-        return "Persona amb nom: "+ this.nom+ " i DNI: "+ this.dni + "(PROFE amb sou:)";
+        return "Persona amb nom: "+ this.nom+ " i DNI: "+ this.dni ;
 
     }
 

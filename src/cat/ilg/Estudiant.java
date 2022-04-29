@@ -16,6 +16,6 @@ public class Estudiant extends Persona{
     }
 
     public String obtenirDades() {
-        return "Persona amb nom: " + this.getNom() + " i DNI: " + this.getDni() + "(ESTUDIANT amb nota: )";
+        return "Persona amb nom: " + this.getNom() + " i DNI: " + this.getDni() + "(ESTUDIANT amb nota:" +getNota()+")";
     }
 }

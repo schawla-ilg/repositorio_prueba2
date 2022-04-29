@@ -3,7 +3,7 @@ package cat.ilg;
 import javax.swing.*;
 import java.util.Date;
 
-public class ProfessorSubstitut extends Professor{
+public class ProfessorSubstitut extends Professor {
     private Date dataInici;
     private Date dataFi;
 
