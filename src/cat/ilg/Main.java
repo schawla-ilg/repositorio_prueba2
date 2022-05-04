@@ -31,7 +31,9 @@ public class Main {
         ins1.afegirProfe(profe2);
 
 
-
+    Persona p1 = new Persona();
+    p1.assignarDni("XVFRP");
+    p1.obtenirDades();
 
 
 

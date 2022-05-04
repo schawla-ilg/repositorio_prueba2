@@ -13,13 +13,21 @@ public class Persona {
     }
 
     public void assignarDni(String dni){
-        if (this.dni == null){
-            this.dni = dni;
-        }
-        else {
 
+        try {
+            if (this.dni == null){
+                this.dni = dni;
+            }
+            else {
+                throw new Exception("Ya tiene DNI asiganado ");
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
+
     }
+
     public String getDni(){
         return this.dni;
     }
