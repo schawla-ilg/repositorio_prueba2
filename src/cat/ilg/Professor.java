@@ -5,11 +5,11 @@ public class Professor extends Persona{
 
     public void setSou (double sou){
         try {
-            if (this.sou < 3000 && this.sou > 0){
+            if (sou < 3000 && sou > 0){
                 this.sou = sou;
             }
             else {
-                throw new Exception("El salario no puede saltar el limite ");
+                throw new Exception("El salario no puede exceder el limite ");
             }
 
         } catch (Exception e) {

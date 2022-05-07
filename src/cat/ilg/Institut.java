@@ -9,6 +9,7 @@ public class Institut {
     ArrayList <Persona> estudiants = new ArrayList<>();
     ArrayList <Persona> professors = new ArrayList<>();
 
+
     public void setNom(String nom){
         this.nom = nom;
     }
@@ -16,9 +17,13 @@ public class Institut {
         this.nom = nom;
     }
 
+
+
+
     public String getNom(){
         return "El nom del Institut es: " +  this.nom;
     }
+
     public void afegirProfe(Professor professor) {
         professors.add(professor);
     }

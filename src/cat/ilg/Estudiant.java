@@ -7,8 +7,18 @@ public class Estudiant extends Persona{
         super();
     }
 
-    public void posarNota(double nota){
-        this.nota = nota;
+    public void posarNota(double nota) {
+        try {
+            if (nota >= 0 && nota <= 10){
+                this.nota = nota;
+            }
+            else {
+                throw new Exception("La nota esta incorrecta");
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public double getNota(){
