@@ -30,7 +30,9 @@ public class Main {
         Estudiant estudiant1 = new Estudiant();
         estudiant1.assignarNom("Laura");
         estudiant1.assignarDni("XL567M2");
-        estudiant1.posarNota(12);
+        estudiant1.posarNota(8);
+        estudiant1.posarNota(4);
+        System.out.println(estudiant1.addNota);
         System.out.println(estudiant1.obtenirDades());
 
 
@@ -86,7 +88,6 @@ public class Main {
             case 3:
 
         }
-
     */
     }
 
