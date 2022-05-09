@@ -32,7 +32,9 @@ public class Main {
         estudiant1.assignarDni("XL567M2");
         estudiant1.posarNota(8);
         estudiant1.posarNota(4);
+        estudiant1.posarNota(6);
         System.out.println(estudiant1.addNota);
+        System.out.println(estudiant1.getAverage());
         System.out.println(estudiant1.obtenirDades());
 
 

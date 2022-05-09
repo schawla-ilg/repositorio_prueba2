@@ -1,6 +1,7 @@
 package cat.ilg;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Estudiant extends Persona{
     private double nota;
@@ -14,12 +15,11 @@ public class Estudiant extends Persona{
 
     public void posarNota(double nota) {
 
+
         try {
             if (nota >= 0 && nota <= 10){
                 this.nota = nota;
-                for(int i = 0; i < addNota.size(); i++) {
-                    addNota.add(this.nota);
-                }
+                addNota.add(nota);
                 
             }
             else {
@@ -38,6 +38,20 @@ public class Estudiant extends Persona{
     }
 
     public String obtenirDades() {
-        return "Persona amb nom: " + this.getNom() + " i DNI: " + this.getDni() + "(ESTUDIANT amb nota:" +getNota()+")";
+        return "Persona amb nom: " + this.getNom() + " i DNI: " + this.getDni() + "(ESTUDIANT amb nota maxima :" + Collections.max(addNota) +")";
+    }
+
+
+    public String getMin(){
+        return "Nota minima del Estudiant es "+ Collections.min(addNota);
+    }
+
+
+    public String getAverage(){
+        double total = 0.0;
+        for(double i  : addNota) {
+            total += nota;
+        }
+        return "La nota mediana del Estudiant es "+ (total/addNota.size());
     }
 }
